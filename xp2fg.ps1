@@ -64,7 +64,7 @@ while (-not $stream_reader.EndOfStream)
                         # correct bearing
                         $bearing=$cols[6] -as [double]
                         $bearing=$bearing % 360.
-                        $cols[6]=$bearing.toString("#.###")
+                        $cols[6]=$bearing.toString("0.000")
                         $pattern=0,1,2,3,4,5,6,7,8,10,11
                     }
                     6 {
